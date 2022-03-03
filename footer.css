@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+  height: 100%;
+  background-color: #000;
+}
+
+.footer {
+  padding: 80px 0 50px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  background: #000;
+}
+
+.footer-container nav {
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+}
+
+.footer-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.brand {
+  padding: 0 15px;
+  flex: 0 0 auto;
+  min-height: 346px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.brand a {
+  margin: 0;
+  height: 40px;
+  width: 132px;
+  display: inline-block;
+  color: white;
+}
+
+.top-links {
+  text-decoration: none;
+  color: white;
+  width: 50%;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+}
+
+.footer-links-container {
+  padding: 0 15px;
+  margin: 0;
+  flex: 1 0;
+}
+
+.footer-headings {
+  margin: 20px 0;
+  color: #919496;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+
+}
+
+.footer-links {
+  margin: 0;
+}
+
+.footer-links a {
+  padding: 3px 0 15px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #1ed760;
+}
+
+.social-icons {
+  margin: 0 15px 0 auto;
+  display: block;
+}
+
+.social-container ul {
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+
+.social-container a {
+  border-radius: 50%;
+  background-color: #222326;
+  width: 54px;
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.country {
+  margin: 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.country a {
+  color: #919496;
+  padding: 0;
+  font-size: 12px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.country a:hover {
+  color: #1ed760;
+}
+
+.bottom-links {
+  width: 100%;
+  display: flex;
+}
+
+.bottom-links ul {
+  margin: 0 45px 0 0;
+  padding: 0 0 0 15px;
+}
+
+.bottom-links ul li {
+  margin-right: 24px;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.bottom-links ul li a {
+  padding: 1em 0;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #919496;
+}
+
+.bottom-links span {
+  margin: 0 15px 0 auto;
+  padding: 1em 0;
+  font-size: 12px;
+  flex-shrink: 0;
+  color: #919496;
+}
