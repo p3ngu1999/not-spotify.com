@@ -1,3 +1,3 @@
 # not-spotify.com
 
-This a (not so identical) clone of the popular online music service Spotify!
+This is a (kindof identical) clone of the popular online music service Spotify's website!

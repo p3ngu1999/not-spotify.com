@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
+*, ::before, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,11 +8,10 @@
 }
 
 html, body {
-  height: 100%;
 }
 
-.hero {
-  background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+.hero-container {
+  background-image: url("https://www-growth.scdn.co/static/home/bursts-tablet.svg");
   background-size: 175%;
   background-position: 46% 4%;
   justify-content: center;
@@ -31,7 +30,7 @@ html, body {
   text-align: center;
 }
 
-.hero-title {
+.hero-header h1 {
   width: 800px;
   text-indent: -3.3em;
   transform: translate(125px);
@@ -39,44 +38,114 @@ html, body {
   line-height: 166px;
   padding-bottom: 40px;
   letter-spacing: -0.04em !important;
-  font-weight: 700;
-  color: #1ed760;
-
-}
-
-.hero-subtitle {
-  box-sizing: border-box;
   display: block;
-  padding: 0px 0px 0.67em;
   margin-top: 0px;
-  color: #1ed760;
-  font-weight: 500;
   margin-bottom: 0px;
-}
-
-.hero-cta {
-  font-size: 14px;
-  line-height: 20px;
   font-weight: 700;
-  user-select: none;
-  padding: 0px;
-  align-self: center;
-  padding-top: 3em;
+  color: #1ed760;
 }
 
-.hero-cta:hover {
-  transition: transform .2s;
-  transform: scale(1.1);
+.hero-container p {
+  width: 800px;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 40px;
+  display: block;
+  padding: 0 0 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #1ed760;
 }
 
-.button {
-  background-color: #1ed760;
-  color: #2941ab;
+.header-container .hero-header .button {
+  text-align: center;
+  
+}
+
+.button a {
   text-decoration: none;
   border-radius: 500px;
-  font-size: inherit;
-  padding: 14px 32px;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
+  background-color: #1ed760;
+  padding: 15px 25px;
+}
+
+.button:hover {
+  transform: scale(1.04);
+  background-color: #64ff9a;
+}
+
+/* responsive hero (kindof) */
+
+@media(max-width: 1200px) {
+
+  .hero-container {
+    background-image: url("https://www-growth.scdn.co/static/home/bursts-tablet.svg");
+    background-size: 153%;
+    background-position: right 40% center;
+    justify-content: center;  
+  }
+
+  .hero-header h1 {
+    width: 754px;
+    font-size: 104px;
+    line-height: 124px;
+    padding-bottom: 24px;
+    transform: none;
+    text-indent: unset;
+  }
+
+  .hero-container p {
+    width: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+ 
+}
+  
+@media(max-width: 930px) {
+
+  .hero-container {
+    background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
+    background-position: center top 40%;
+    background-repeat: no-repeat;
+    background-size: 215%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(41, 65, 171);
+    text-align: center;
+  }
+  
+
+  .hero-header h1 {
+    width: 312px;
+    letter-spacing: -0.04em !important;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-indent: unset;
+    text-align: center;
+    transform: none;
+  }
+
+  .hero-container p {
+    padding-bottom: 32px;
+    width: 312px;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    
+
+  }
 }
