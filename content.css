@@ -73,6 +73,9 @@ html, body {
 
 .button:hover {
   transform: scale(1.04);
+}
+
+.button a:hover {
   background-color: #64ff9a;
 }
 
